@@ -1,11 +1,5 @@
 # CSC455-Steganography-Project
 
-### Note: Potential Python Module
-
-I found a potential Python module that we could use for this project. Have a look at [stegano 0.11.4](https://pypi.org/project/stegano/).
-
-The full link: https://pypi.org/project/stegano/
-
 ### Setup Instructions
 
 1. Ensure you have Python (Version 3 for this test) installed on your machine.
@@ -13,20 +7,16 @@ The full link: https://pypi.org/project/stegano/
 	```sh
 	pip3 install stegano
 	```
+3. Install the `pillow` module using pip:
+   	```sh
+	pip3 install pillow
+    	``` 
 
-### Important Notes
+### GUI Implementation
 
-- `stegano` doesn't support JPG files, or at least I couldn't get it to work with them.
+I added a simple GUI to the project (I tried to make it look somewhat modern, but I'm awful at designing GUIs in python)
+The library works on JPG files as long as they are converted to png files when saved
 
-### Running the Test
-
-I have created a test file for you to try. Run the following command:
 ```sh
 python3 test.py
-```
-
-You should see the following output:
-```
-Message hidden and image saved.
-Revealed message: Hello World
 ```
